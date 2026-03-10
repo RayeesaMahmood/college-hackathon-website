@@ -296,7 +296,6 @@ useEffect(() => {
               <div className="mb-7 flex flex-wrap items-center gap-3 text-sm font-bold text-black/85 sm:text-lg">
                 <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Lords Institute of Engineering & Technology</div>
                 <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Women in STEM</div>
-                <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Co-hosted by HackUnion</div>
               </div>
 
               <div className="relative inline-block">

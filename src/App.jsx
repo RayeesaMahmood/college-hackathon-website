@@ -561,7 +561,7 @@ useEffect(() => {
             Title Sponsor
           </div>
           <div className="mt-2 text-3xl font-black sm:text-5xl">
-            Lords Institute of Engineering & Technology
+            Lords Institute of Engineering and Technology
           </div>
         </div>
       </div>
@@ -599,9 +599,9 @@ useEffect(() => {
     <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {[
         { label: "Co-Host", value: "HackUnion" },
-        { label: "Title Partner", value: "Lords Institute" },
+        { label: "Host", value: "Lords Institute of Engineering and Technology" },
         { label: "Gold Sponsor", value: "GitHub" },
-        { label: "Education Partner", value: "LSA" },
+        { label: "Education Partner", value: "LSA-Lords Skill Academy" },
         { label: "Hackathon Partner", value: "MLH" },
         { label: "Technology Partner", value: "Google Gemini & ElevenLabs" },
       ].map((partner) => (
@@ -679,7 +679,7 @@ useEffect(() => {
             <div className="mt-10 rounded-[28px] bg-black p-6 text-white soft-shadow">
               <div className="text-2xl font-black sm:text-3xl">Organizing Team</div>
               <div className="mt-3 text-lg leading-8 text-white/80 sm:text-xl">
-                  DevQueens is organized by a passionate team of students and faculty from Lords Institute of Engineering & Technology, along with dedicated volunteers from HackUnion.
+                  DevQueens is organized by a passionate team of students and faculty from Lords Institute of Engineering and Technology, along with dedicated volunteers from HackUnion.
                  remaining team members to be added later.
               </div>
             </div>

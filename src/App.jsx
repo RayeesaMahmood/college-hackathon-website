@@ -298,15 +298,17 @@ useEffect(() => {
                 <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Women in STEM</div>
               </div>
 
-              <div className="relative inline-block">
-                <div className="absolute bottom-4 left-0 h-5 w-full bg-pink-200/80" />
-                <h1 className="title-font relative text-[3.1rem] leading-none tracking-[0.12em] sm:text-[4.5rem] lg:text-[5.6rem]">
-                  DEVQUEENS
-                </h1>
-              </div>
+            <div className="relative inline-flex items-center gap-4">
+  
+  <img
+    src="https://i.postimg.cc/dQN66r1Q/devqueen-logo.png"
+    alt="DevQueens Logo"
+    className="h-14 w-14 object-contain"
+  />
 
+</div>
               <p className="mt-3 text-2xl font-semibold tracking-[0.2em] text-[#035f67] sm:text-3xl">
-                WOMEN&apos;S HACKATHON
+                WOMEN in STEM HACKATHON
               </p>
 
               <p className="mt-8 max-w-3xl text-lg leading-8 sm:text-2xl sm:leading-10">

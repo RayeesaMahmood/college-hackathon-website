@@ -662,7 +662,7 @@ useEffect(() => {
       </main>
 
       <footer className="bg-[#0b1f14] px-4 py-5 text-white lg:px-6">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm sm:flex-row sm:items-center sm:justify-between sm:text-lg">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm sm:flex-row sm: items-centre sm:justify-between sm:text-lg">
           <div>© Made with adoration - Rayeesa Mahmood.</div>
           <div className="flex flex-wrap gap-4">
             <a href="https://www.instagram.com/devqueens_hackathon/" target="_blank" rel="noreferrer" className="text-lime-300 hover:underline">

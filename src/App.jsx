@@ -137,31 +137,6 @@ export default function DevQueensHackathonSite() {
       role: "Faculty Convenor",
       initials: "SK",
     },
-    {
-      name: "Dr.Ruhiat Sultana ",
-      role: "Organizer",
-      initials: "RM",
-    },
-    {
-      name: "Kafia",
-      role: "Organizer",
-      initials: "KA",
-    },
-    {
-      name: "Alina",
-      role: "Organizer",
-      initials: "AL",
-    },
-    {
-      name: "Rayeesa Mahmood",
-      role: "Organizer",
-      initials: "RA",
-    },
-    {
-      name: "Reda Kaleem",
-      role: "Organizer",
-      initials: "RE",
-    },
   ];
   const targetDate = new Date("2026-04-02T08:30:00+05:30").getTime();
 
@@ -205,11 +180,11 @@ useEffect(() => {
 }, [targetDate]);
 
   return (
-    <div className="min-h-screen bg-[#f3f3f1] text-black" style={{ fontFamily: "Arial, sans-serif" }}>
+    <div className="min-h-screen bg-[#eef7f0] text-black" style={{ fontFamily: "Arial, sans-serif" }}>
       <style>{`
         html { scroll-behavior: smooth; }
         .topo-bg {
-          background-color: #f3f3f1;
+          background-color: #eef7f0;
           background-image:
             radial-gradient(circle at 20% 20%, rgba(0,0,0,0.03), transparent 20%),
             radial-gradient(circle at 80% 30%, rgba(0,0,0,0.03), transparent 22%),
@@ -218,11 +193,11 @@ useEffect(() => {
           background-size: 220px 220px, 260px 260px, 280px 280px, 40px 40px;
         }
         .chevron-bg {
-          background-color: #f3f3f1;
+          background-color: #eef7f0;
           background-image: repeating-linear-gradient(
             135deg,
-            rgba(87, 71, 153, 0.07) 0,
-            rgba(87, 71, 153, 0.07) 42px,
+            rgba(34, 139, 94, 0.07) 0,
+            rgba(34, 139, 94, 0.07) 42px,
             transparent 42px,
             transparent 180px
           );
@@ -238,7 +213,7 @@ useEffect(() => {
         .gradient-line {
           height: 5px;
           border-radius: 999px;
-          background: linear-gradient(90deg, #f5b200 0%, #ff4d8d 45%, #ca25ff 100%);
+          background: linear-gradient(90deg, #84cc16 0%, #22c55e 45%, #065f46 100%);
         }
         .soft-shadow {
           box-shadow: 0 14px 28px rgba(0,0,0,0.18);
@@ -247,7 +222,7 @@ useEffect(() => {
           box-shadow: 0 16px 30px rgba(0,0,0,0.22);
         }
         .dev-btn {
-          background: #000;
+          background: #14532d;
           color: white;
           border-radius: 999px;
           padding: 0.9rem 1.5rem;
@@ -261,28 +236,28 @@ useEffect(() => {
         }
       `}</style>
 
-      <header className="sticky top-0 z-50 bg-black text-white border-b border-white/10">
+      <header className="sticky top-0 z-50 bg-[#0b1f14] text-white border-b border-white/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6">
           <div className="flex items-center gap-3">
-            <div className="h-11 w-11 rounded-md bg-gradient-to-br from-cyan-400 via-fuchsia-500 to-yellow-400 p-[2px]">
-              <div className="flex h-full w-full items-center justify-center rounded-md bg-black text-lg font-bold">D</div>
+            <div className="h-11 w-11 rounded-md bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700 p-[2px]">
+              <div className="flex h-full w-full items-center justify-center rounded-md bg-[#0b1f14] text-lg font-bold">D</div>
             </div>
             <div className="title-font text-2xl tracking-[0.35em] sm:text-3xl">DEVQUEENS</div>
           </div>
 
           <nav className="hidden items-center gap-10 text-lg font-semibold lg:flex">
             {navItems.map((item) => (
-              <a key={item.label} href={item.href} className="transition hover:text-pink-300">
+              <a key={item.label} href={item.href} className="transition hover:text-lime-300">
                 {item.label}
               </a>
             ))}
           </nav>
 
           <a
-            href="https://devqueens.devpost.com/"
+            href="https://events.mlh.io/events/13847-devqueens"
             target="_blank"
             rel="noreferrer"
-            className="rounded-2xl border-2 border-sky-300 px-5 py-2 text-xl font-bold transition hover:bg-white hover:text-black"
+            className="rounded-2xl border-2 border-green-300 px-5 py-2 text-xl font-bold transition hover:bg-white hover:text-[#0b1f14]"
           >
             Register
           </a>
@@ -296,23 +271,22 @@ useEffect(() => {
               <div className="mb-7 flex flex-wrap items-center gap-3 text-sm font-bold text-black/85 sm:text-lg">
                 <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Lords Institute of Engineering & Technology</div>
                 <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Women in STEM</div>
+                <div className="rounded-full border border-black/15 bg-white/70 px-4 py-2">Co-hosted by HackUnion</div>
               </div>
 
-            <div className="relative inline-flex items-center gap-4">
-  
-  <img
-    src="https://i.postimg.cc/dQN66r1Q/devqueen-logo.png"
-    alt="DevQueens Logo"
-    className="h-14 w-14 object-contain"
-  />
+              <div className="relative inline-block">
+                <div className="absolute bottom-4 left-0 h-5 w-full bg-green-200/80" />
+                <h1 className="title-font relative text-[3.1rem] leading-none tracking-[0.12em] sm:text-[4.5rem] lg:text-[5.6rem]">
+                  DEVQUEENS
+                </h1>
+              </div>
 
-</div>
-              <p className="mt-3 text-2xl font-semibold tracking-[0.2em] text-[#035f67] sm:text-3xl">
-                WOMEN in STEM HACKATHON
+              <p className="mt-3 text-2xl font-semibold tracking-[0.2em] text-[#166534] sm:text-3xl">
+                WOMEN&apos;S HACKATHON
               </p>
 
               <p className="mt-8 max-w-3xl text-lg leading-8 sm:text-2xl sm:leading-10">
-                <span className="font-black text-[#027580]">Queens Don&apos;t Wait. They Innovate.</span>
+                <span className="font-black text-[#15803d]">Queens Don&apos;t Wait. They Innovate.</span>
                 <br />
                 DevQueens is a women-focused hackathon designed to empower builders to create innovative technology solutions,
                 collaborate with peers, and lead with confidence.
@@ -320,7 +294,7 @@ useEffect(() => {
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
-                  href="https://devqueens.devpost.com/"
+                  href="https://events.mlh.io/events/13847-devqueens"
                   target="_blank"
                   rel="noreferrer"
                   className="dev-btn text-lg sm:text-xl"
@@ -332,7 +306,7 @@ useEffect(() => {
                 </a>
               </div>
 
-              <div className="mt-10 grid grid-cols-4 gap-3 rounded-[28px] bg-[radial-gradient(circle_at_top,#2c0b57,#071e3c_55%,#000)] p-4 card-shadow sm:gap-6 sm:p-5">
+              <div className="mt-10 grid grid-cols-4 gap-3 rounded-[28px] bg-[radial-gradient(circle_at_top,#14532d,#064e3b_55%,#022c22)] p-4 card-shadow sm:gap-6 sm:p-5">
               
                  {[
                    [timeLeft.days, "Days"],
@@ -356,8 +330,8 @@ useEffect(() => {
                     key={card.title}
                     className={`rounded-[26px] border p-5 text-white card-shadow ${
                       card.accent
-                        ? "border-sky-100/30 bg-gradient-to-br from-[#163b64] to-[#2a6b88]"
-                        : "border-white/20 bg-[radial-gradient(circle_at_top,#222,#000)]"
+                        ? "border-green-100/30 bg-gradient-to-br from-[#14532d] to-[#15803d]"
+                        : "border-white/20 bg-[radial-gradient(circle_at_top,#1f3b2d,#0b1f14)]"
                     }`}
                   >
                     <div className="mb-2 flex items-center justify-between gap-3">
@@ -367,7 +341,7 @@ useEffect(() => {
                     <div className="mb-4 border-t-2 border-dotted border-white/60" />
                     <div className="space-y-4 text-lg sm:text-[1.35rem]">
                       {card.items.map((item) => (
-                        <div key={item} className="border-b-2 border-dotted border-sky-200/40 pb-2 last:border-b-0">
+                        <div key={item} className="border-b-2 border-dotted border-green-200/40 pb-2 last:border-b-0">
                           {item}
                         </div>
                       ))}
@@ -376,8 +350,8 @@ useEffect(() => {
                 ))}
               </div>
 
-              <div className="rounded-[26px] border border-black p-5 soft-shadow bg-[#e9f4f2]">
-                <div className="futuristic-font text-2xl font-black uppercase text-fuchsia-800 sm:text-4xl">Problem Statements</div>
+              <div className="rounded-[26px] border border-black p-5 soft-shadow bg-[#e7f5ea]">
+                <div className="futuristic-font text-2xl font-black uppercase text-green-800 sm:text-4xl">Problem Statements</div>
                 <div className="mt-6 space-y-4 text-lg font-bold sm:text-2xl">
                   {tracks.map((track) => (
                     <div key={track} className="flex items-center justify-between border-b-2 border-dotted border-black/45 pb-3">
@@ -394,22 +368,22 @@ useEffect(() => {
         <section id="about" className="topo-bg px-4 py-16 lg:px-6 lg:py-24">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 flex items-center gap-5">
-              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-yellow-400 via-fuchsia-500 to-indigo-700" />
+              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700" />
               <h2 className="title-font text-5xl sm:text-7xl">About</h2>
               <div className="gradient-line hidden flex-1 sm:block" />
             </div>
 
             <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
               <div className="flex justify-center">
-                <div className="relative h-80 w-80 rounded-full bg-[radial-gradient(circle_at_30%_30%,#fff3a0,#f1ea82_45%,#dce47d_46%,#dce47d_100%)]">
-                  <div className="absolute left-1/2 top-1/2 h-52 w-28 -translate-x-1/2 -translate-y-1/2 rounded-[60px] border-[10px] border-[#3a6b36] bg-[#9dd0bd]" />
-                  <div className="absolute left-1/2 top-[28%] h-14 w-14 -translate-x-1/2 rounded-full bg-[#7ca995]" />
-                  <div className="absolute left-[26%] top-[26%] h-24 w-10 rounded-full bg-[#245a2a]" />
-                  <div className="absolute right-[26%] top-[26%] h-24 w-10 rounded-full bg-[#245a2a]" />
+                <div className="relative h-80 w-80 rounded-full bg-[radial-gradient(circle_at_30%_30%,#f7fee7,#d9f99d_45%,#bbf7d0_46%,#bbf7d0_100%)]">
+                  <div className="absolute left-1/2 top-1/2 h-52 w-28 -translate-x-1/2 -translate-y-1/2 rounded-[60px] border-[10px] border-[#166534] bg-[#86efac]" />
+                  <div className="absolute left-1/2 top-[28%] h-14 w-14 -translate-x-1/2 rounded-full bg-[#4ade80]" />
+                  <div className="absolute left-[26%] top-[26%] h-24 w-10 rounded-full bg-[#14532d]" />
+                  <div className="absolute right-[26%] top-[26%] h-24 w-10 rounded-full bg-[#14532d]" />
                 </div>
               </div>
 
-              <div className="border-[6px] border-fuchsia-500 bg-[linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,225,244,0.7))] p-7 text-xl leading-10 sm:text-[2rem] sm:leading-[1.9]">
+              <div className="border-[6px] border-green-500 bg-[linear-gradient(135deg,rgba(255,255,255,0.85),rgba(220,252,231,0.75))] p-7 text-xl leading-10 sm:text-[2rem] sm:leading-[1.9]">
                 DevQueens Hackathon is an initiative designed to empower and encourage women developers to build innovative
                 technology solutions. This hackathon creates a collaborative environment where participants can learn,
                 experiment, and showcase their skills while solving real-world problems.
@@ -423,11 +397,11 @@ useEffect(() => {
             <div className="mt-16 grid gap-10 lg:grid-cols-2">
               <div className="grid items-center gap-6 lg:grid-cols-[160px_1fr]">
                 <div className="flex justify-center">
-                  <div className="flex h-36 w-36 items-center justify-center rounded-3xl bg-[#f5d8e8] text-6xl">👩‍💻</div>
+                  <div className="flex h-36 w-36 items-center justify-center rounded-3xl bg-[#dcfce7] text-6xl">👩‍💻</div>
                 </div>
                 <div>
-                  <div className="title-font text-5xl text-purple-800 sm:text-6xl">VISION</div>
-                  <div className="mt-4 border-[5px] border-fuchsia-500 bg-[radial-gradient(circle_at_top_right,#3f145a,#1d1441_60%,#140d2e)] p-6 text-lg leading-9 text-white sm:text-[1.65rem] sm:leading-[1.7]">
+                  <div className="title-font text-5xl text-green-800 sm:text-6xl">VISION</div>
+                  <div className="mt-4 border-[5px] border-green-500 bg-[radial-gradient(circle_at_top_right,#166534,#14532d_60%,#0b1f14)] p-6 text-lg leading-9 text-white sm:text-[1.65rem] sm:leading-[1.7]">
                     To create an inclusive tech ecosystem where women innovators can build impactful solutions, lead
                     technological change, and inspire the next generation of developers through confidence, creativity,
                     and community.
@@ -438,24 +412,24 @@ useEffect(() => {
               
               <div className="grid items-center gap-6 lg:grid-cols-[1fr_160px]">
                 <div>
-                  <div className="mt-2 border-[5px] border-fuchsia-500 bg-[radial-gradient(circle_at_top_right,#3f145a,#1d1441_60%,#140d2e)] p-6 text-lg leading-9 text-white sm:text-[1.65rem] sm:leading-[1.7]">
+                  <div className="mt-2 border-[5px] border-green-500 bg-[radial-gradient(circle_at_top_right,#166534,#14532d_60%,#0b1f14)] p-6 text-lg leading-9 text-white sm:text-[1.65rem] sm:leading-[1.7]">
                     DevQueens aims to empower women in technology through collaborative innovation, hands-on building,
                     mentorship, and real-world problem solving. The event encourages participants to learn, create, and
                     leave a meaningful impact through technology.
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="flex h-36 w-36 items-center justify-center rounded-full bg-[#ffe4ef] text-7xl">🎯</div>
+                  <div className="flex h-36 w-36 items-center justify-center rounded-full bg-[#dcfce7] text-7xl">🎯</div>
                 </div>
                 <div className="lg:col-span-2 lg:pl-[calc(100%-13rem)]">
-                  <div className="title-font text-5xl text-purple-800 sm:text-6xl">MISSION</div>
+                  <div className="title-font text-5xl text-green-800 sm:text-6xl">MISSION</div>
                 </div>
               </div>
             </div>
         
             <div className="mt-16 grid gap-8 lg:grid-cols-2">
-              <div className="border-[5px] border-fuchsia-500 bg-[radial-gradient(circle_at_bottom_right,#31165a,#180f37_60%,#140d2b)] p-7 text-white">
-                <div className="mb-5 text-4xl font-black text-[#beff6b]">Themes / Tracks</div>
+              <div className="border-[5px] border-green-500 bg-[radial-gradient(circle_at_bottom_right,#166534,#14532d_60%,#0b1f14)] p-7 text-white">
+                <div className="mb-5 text-4xl font-black text-[#d9f99d]">Themes / Tracks</div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {tracks.map((track) => (
                     <div key={track} className="rounded-2xl border border-white/20 bg-white/10 p-4 text-lg font-semibold">
@@ -464,8 +438,8 @@ useEffect(() => {
                   ))}
                 </div>
               </div>
-              <div className="border-[5px] border-fuchsia-500 bg-[radial-gradient(circle_at_bottom_right,#31165a,#180f37_60%,#140d2b)] p-7 text-white">
-                <div className="mb-5 text-4xl font-black text-[#beff6b]">What You Can Build</div>
+              <div className="border-[5px] border-green-500 bg-[radial-gradient(circle_at_bottom_right,#166534,#14532d_60%,#0b1f14)] p-7 text-white">
+                <div className="mb-5 text-4xl font-black text-[#d9f99d]">What You Can Build</div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {buildItems.map((item) => (
                     <div key={item} className="rounded-2xl border border-white/20 bg-white/10 p-4 text-lg font-semibold">
@@ -478,16 +452,16 @@ useEffect(() => {
           </div>
         </section>
 
-        <section id="schedule" className="chevron-bg border-y border-white/80 px-4 py-16 shadow-[inset_0_20px_30px_rgba(140,120,255,0.18)] lg:px-6 lg:py-24">
+        <section id="schedule" className="chevron-bg border-y border-white/80 px-4 py-16 shadow-[inset_0_20px_30px_rgba(34,197,94,0.16)] lg:px-6 lg:py-24">
           <div className="mx-auto max-w-7xl">
             <div className="mb-14 flex items-center gap-5">
-              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-yellow-400 via-fuchsia-500 to-indigo-700" />
+              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700" />
               <h2 className="title-font text-5xl sm:text-7xl">Schedule</h2>
               <div className="gradient-line hidden flex-1 sm:block" />
             </div>
 
             <div className="relative mx-auto max-w-6xl">
-              <div className="absolute left-1/2 top-0 hidden h-full w-[4px] -translate-x-1/2 bg-[#6f5fe2] lg:block" />
+              <div className="absolute left-1/2 top-0 hidden h-full w-[4px] -translate-x-1/2 bg-[#16a34a] lg:block" />
               <div className="space-y-12 lg:space-y-16">
                 {timeline.map((item, index) => (
                   <div
@@ -495,18 +469,18 @@ useEffect(() => {
                     className={`relative grid gap-5 lg:grid-cols-2 ${item.side === "right" ? "" : ""}`}
                   >
                     <div className={`${item.side === "right" ? "lg:order-1" : "lg:order-0"} ${item.side === "right" ? "lg:col-start-2" : ""}`}>
-                      <div className="rounded-[28px] border border-[#7d6eff] bg-[#f7f7f7] p-6 soft-shadow">
+                      <div className="rounded-[28px] border border-[#22c55e] bg-[#f7faf7] p-6 soft-shadow">
                         <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
-                          <div className="futuristic-font rounded-full bg-gradient-to-r from-[#7f59ff] to-[#ec43c4] px-5 py-2 text-xl font-black text-white sm:text-2xl">
+                          <div className="futuristic-font rounded-full bg-gradient-to-r from-[#16a34a] to-[#15803d] px-5 py-2 text-xl font-black text-white sm:text-2xl">
                             {item.title}
                           </div>
-                          <div className="futuristic-font text-xl font-black text-[#9d56ff] sm:text-3xl">{item.date}</div>
+                          <div className="futuristic-font text-xl font-black text-[#166534] sm:text-3xl">{item.date}</div>
                         </div>
                         <p className="text-lg leading-9 sm:text-[1.55rem] sm:leading-[1.8]">{item.description}</p>
                       </div>
                     </div>
                     <div className={`${item.side === "right" ? "lg:order-0" : "lg:order-1"} hidden lg:block`} />
-                    <div className="absolute left-1/2 top-10 hidden h-7 w-7 -translate-x-1/2 rounded-full border-[6px] border-[#eb86ff] bg-[#6f1fff] lg:block" />
+                    <div className="absolute left-1/2 top-10 hidden h-7 w-7 -translate-x-1/2 rounded-full border-[6px] border-[#86efac] bg-[#15803d] lg:block" />
                   </div>
                 ))}
               </div>
@@ -547,15 +521,15 @@ useEffect(() => {
 
     {/* Sponsors Title */}
     <div className="mb-12 flex items-center gap-5">
-      <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-yellow-400 via-fuchsia-500 to-indigo-700" />
+      <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700" />
       <h2 className="title-font text-5xl sm:text-7xl">Sponsors</h2>
       <div className="gradient-line hidden flex-1 sm:block" />
     </div>
 
     {/* Title Sponsor */}
-    <div className="mx-auto max-w-3xl rounded-[28px] border border-[#6e64ff] bg-[linear-gradient(90deg,rgba(222,231,255,0.85),rgba(255,218,228,0.85))] p-8 soft-shadow">
+    <div className="mx-auto max-w-3xl rounded-[28px] border border-[#22c55e] bg-[linear-gradient(90deg,rgba(220,252,231,0.9),rgba(209,250,229,0.88))] p-8 soft-shadow">
       <div className="grid gap-6 sm:grid-cols-[120px_1fr] sm:items-center">
-        <div className="flex h-28 w-28 items-center justify-center rounded-3xl bg-white text-4xl font-black text-[#1e3577] shadow-md">
+        <div className="flex h-28 w-28 items-center justify-center rounded-3xl bg-white text-4xl font-black text-[#14532d] shadow-md">
           LI
         </div>
         <div>
@@ -563,16 +537,16 @@ useEffect(() => {
             Title Sponsor
           </div>
           <div className="mt-2 text-3xl font-black sm:text-5xl">
-            Lords Institute of Engineering and Technology
+            Lords Institute of Engineering & Technology
           </div>
         </div>
       </div>
     </div>
 
     {/* Community Sponsor */}
-    <div className="mx-auto mt-8 max-w-3xl rounded-[28px] border border-[#6e64ff] bg-[linear-gradient(90deg,rgba(222,231,255,0.85),rgba(255,218,228,0.85))] p-8 soft-shadow">
+    <div className="mx-auto mt-8 max-w-3xl rounded-[28px] border border-[#22c55e] bg-[linear-gradient(90deg,rgba(220,252,231,0.9),rgba(209,250,229,0.88))] p-8 soft-shadow">
       <div className="grid gap-6 sm:grid-cols-[120px_1fr] sm:items-center">
-        <div className="flex h-28 w-28 items-center justify-center rounded-3xl bg-black text-4xl font-black text-white shadow-md">
+        <div className="flex h-28 w-28 items-center justify-center rounded-3xl bg-[#0b1f14] text-4xl font-black text-white shadow-md">
           HU
         </div>
         <div>
@@ -592,7 +566,7 @@ useEffect(() => {
 
     {/* Partners Title */}
     <div className="mt-16 flex items-center gap-5">
-      <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-yellow-400 via-fuchsia-500 to-indigo-700" />
+      <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700" />
       <h2 className="title-font text-5xl sm:text-7xl">Partners</h2>
       <div className="gradient-line hidden flex-1 sm:block" />
     </div>
@@ -601,9 +575,9 @@ useEffect(() => {
     <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {[
         { label: "Co-Host", value: "HackUnion" },
-        { label: "Host", value: "Lords Institute of Engineering and Technology" },
+        { label: "Title Partner", value: "Lords Institute" },
         { label: "Gold Sponsor", value: "GitHub" },
-        { label: "Education Partner", value: "LSA-Lords Skill Academy" },
+        { label: "Education Partner", value: "LSA" },
         { label: "Hackathon Partner", value: "MLH" },
         { label: "Technology Partner", value: "Google Gemini & ElevenLabs" },
       ].map((partner) => (
@@ -625,7 +599,7 @@ useEffect(() => {
         <section id="faqs" className="chevron-bg px-4 py-16 lg:px-6 lg:py-20">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 flex items-center gap-5">
-              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-yellow-400 via-fuchsia-500 to-indigo-700" />
+              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700" />
               <h2 className="title-font text-5xl sm:text-7xl">FAQs</h2>
               <div className="gradient-line hidden flex-1 sm:block" />
             </div>
@@ -647,7 +621,7 @@ useEffect(() => {
         <section id="contact" className="chevron-bg px-4 py-16 lg:px-6 lg:py-20">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 flex items-center gap-5">
-              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-yellow-400 via-fuchsia-500 to-indigo-700" />
+              <div className="h-16 w-16 rounded-[18px] bg-gradient-to-br from-lime-400 via-green-500 to-emerald-700" />
               <h2 className="title-font text-5xl sm:text-7xl">Contacts</h2>
               <div className="gradient-line hidden flex-1 sm:block" />
             </div>
@@ -655,13 +629,13 @@ useEffect(() => {
             <div className="mb-8 rounded-[28px] border border-black/15 bg-white/80 p-6 soft-shadow">
               <div className="text-lg leading-9 sm:text-2xl sm:leading-[1.8]">
                 <span className="font-black">Instagram:</span>{" "}
-                <a className="text-fuchsia-700 underline" href="https://www.instagram.com/devqueens_hackathon/" target="_blank" rel="noreferrer">
+                <a className="text-green-700 underline" href="https://www.instagram.com/devqueens_hackathon/" target="_blank" rel="noreferrer">
                   @devqueens_hackathon
                 </a>
                 <br />
-                <span className="font-black">Devpost:</span>{" "}
-                <a className="text-fuchsia-700 underline" href="https://devqueens.devpost.com/" target="_blank" rel="noreferrer">
-                  devqueens.devpost.com
+                <span className="font-black">MLH:</span>{" "}
+                <a className="text-green-700 underline" href="https://events.mlh.io/events/13847-devqueens" target="_blank" rel="noreferrer">
+                  devqueens.mlh
                 </a>
               </div>
             </div>
@@ -669,7 +643,7 @@ useEffect(() => {
             <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
               {contacts.map((person) => (
                 <div key={person.name} className="rounded-[26px] bg-white/85 p-6 text-center soft-shadow">
-                  <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-full border-[6px] border-fuchsia-500 bg-[#ece6d4] text-5xl font-black text-[#1d1d1d]">
+                  <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-full border-[6px] border-green-500 bg-[#ecfdf5] text-5xl font-black text-[#1d1d1d]">
                     {person.initials}
                   </div>
                   <div className="mt-6 text-3xl font-black sm:text-4xl">{person.name}</div>
@@ -678,25 +652,23 @@ useEffect(() => {
               ))}
             </div>
 
-            <div className="mt-10 rounded-[28px] bg-black p-6 text-white soft-shadow">
-              <div className="text-2xl font-black sm:text-3xl">Organizing Team</div>
+            <div className="mt-10 rounded-[28px] bg-[#0b1f14] p-6 text-white soft-shadow">
               <div className="mt-3 text-lg leading-8 text-white/80 sm:text-xl">
-                  DevQueens is organized by a passionate team of students and faculty from Lords Institute of Engineering and Technology, along with dedicated volunteers from HackUnion.
-                 remaining team members to be added later.
+                  DevQueens is organized by a passionate team of students and faculty from Lords Institute of Engineering & Technology, along with dedicated volunteers from HackUnion.
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="bg-black px-4 py-5 text-white lg:px-6">
+      <footer className="bg-[#0b1f14] px-4 py-5 text-white lg:px-6">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm sm:flex-row sm:items-center sm:justify-between sm:text-lg">
-          <div>© 2026 DevQueens Hackathon. All rights reserved.</div>
+          <div>© Made with adoration - Rayeesa Mahmood.</div>
           <div className="flex flex-wrap gap-4">
-            <a href="https://www.instagram.com/devqueens_hackathon/" target="_blank" rel="noreferrer" className="text-pink-300 hover:underline">
+            <a href="https://www.instagram.com/devqueens_hackathon/" target="_blank" rel="noreferrer" className="text-lime-300 hover:underline">
               Instagram
             </a>
-            <a href="https://devqueens.devpost.com/" target="_blank" rel="noreferrer" className="text-pink-300 hover:underline">
+            <a href="https://devqueens.devpost.com/" target="_blank" rel="noreferrer" className="text-lime-300 hover:underline">
               Devpost
             </a>
           </div>
